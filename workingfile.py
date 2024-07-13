@@ -1,12 +1,12 @@
-from requests_html import HTMLSession
+from gnews import GNews
 
-url = 'https://news.google.com/rss/search?q=stocks'
+google_news = GNews()
 
-s = HTMLSession()
+search = google_news.get_news('ann arbor')
 
-r = s.get(url)
+article = google_news.get_full_article(search[0]['url'])
 
-print(r.html.html)
+print(article.text)
 
-
-
+#for i in range(0,10):
+#    print(str(i) + ". " +  search[i]['title'])
