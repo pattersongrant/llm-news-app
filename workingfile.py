@@ -33,7 +33,7 @@ index = 0
 msgs = [{'role': 'user', 'content': "Read this article: " + article.text}]
 while question != 'exit':
     if index != 0:
-        question = input('\nQ:')
+        question = input('\n\nQ:')
     msgs.append({'role': 'user', 'content': question})
     stream = ollama.chat(
         model='newModel',
