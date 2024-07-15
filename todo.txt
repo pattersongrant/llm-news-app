@@ -1,6 +1,6 @@
 To do list
 1. make llama read all/10 articles of a chosen topic
-2. make llama be able to remember chat history and answer follow ups
+(DONE) make llama be able to remember chat history and answer follow ups
 
 
 
